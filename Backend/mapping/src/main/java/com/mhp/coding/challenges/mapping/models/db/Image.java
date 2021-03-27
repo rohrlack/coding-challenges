@@ -1,5 +1,10 @@
 package com.mhp.coding.challenges.mapping.models.db;
 
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
+
+@SuperBuilder
+@NoArgsConstructor
 public class Image extends DBEntity {
 
     private String url;

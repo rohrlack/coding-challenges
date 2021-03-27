@@ -1,9 +1,13 @@
 package com.mhp.coding.challenges.mapping.models.db.blocks;
 
 import com.mhp.coding.challenges.mapping.models.db.Image;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 import java.util.List;
 
+@SuperBuilder
+@NoArgsConstructor
 public class GalleryBlock extends ArticleBlock {
 
     private List<Image> images;

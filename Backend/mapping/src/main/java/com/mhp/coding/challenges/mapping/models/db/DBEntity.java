@@ -1,7 +1,12 @@
 package com.mhp.coding.challenges.mapping.models.db;
 
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
+
 import java.util.Date;
 
+@SuperBuilder
+@NoArgsConstructor
 public class DBEntity {
 
     private Long id;

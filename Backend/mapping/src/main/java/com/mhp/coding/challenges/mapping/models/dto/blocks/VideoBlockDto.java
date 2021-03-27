@@ -1,7 +1,13 @@
 package com.mhp.coding.challenges.mapping.models.dto.blocks;
 
 import com.mhp.coding.challenges.mapping.models.db.blocks.VideoBlockType;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
+@SuperBuilder
+@NoArgsConstructor
+@EqualsAndHashCode(callSuper = true)
 public class VideoBlockDto extends ArticleBlockDto {
 
     private String url;

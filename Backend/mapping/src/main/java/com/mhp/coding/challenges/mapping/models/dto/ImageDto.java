@@ -1,7 +1,13 @@
 package com.mhp.coding.challenges.mapping.models.dto;
 
 import com.mhp.coding.challenges.mapping.models.db.ImageSize;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
+@SuperBuilder
+@NoArgsConstructor
+@EqualsAndHashCode
 public class ImageDto {
 
     private Long id;

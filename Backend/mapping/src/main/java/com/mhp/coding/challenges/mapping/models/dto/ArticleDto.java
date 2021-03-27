@@ -2,9 +2,15 @@ package com.mhp.coding.challenges.mapping.models.dto;
 
 
 import com.mhp.coding.challenges.mapping.models.dto.blocks.ArticleBlockDto;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 import java.util.Collection;
 
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class ArticleDto {
 
     private Long id;
