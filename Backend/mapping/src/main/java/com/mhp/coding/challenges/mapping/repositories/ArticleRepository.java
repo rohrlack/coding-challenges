@@ -21,8 +21,11 @@ public class ArticleRepository {
         return result;
     }
 
-    public Article findBy(Long id){
-        return createDummyArticle(id);
+    public Optional<Article> findBy(Long id){
+        if(id == 9999){
+            return Optional.empty();
+        }
+        return Optional.of(createDummyArticle(id));
     }
 
     public void create(Article article){
