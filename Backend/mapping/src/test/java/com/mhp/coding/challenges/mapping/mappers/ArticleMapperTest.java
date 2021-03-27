@@ -36,7 +36,8 @@ public class ArticleMapperTest {
     // acceptance criterion 1 - mapping
     // acceptance criterion 2 - sorted
     @Test
-    public void map() {
+    public void shouldMapFullArticle() {
+        // given
         final Date someDate = Date.from(Instant.EPOCH);
         Article article = Article.builder()
                 .author("author")
@@ -77,8 +78,11 @@ public class ArticleMapperTest {
                                 .type(VideoBlockType.YOUTUBE)
                                 .build()
                 ))).build();
+
+        // when
         ArticleDto dto = articleMapper.articleToArticleDto(article);
 
+        // then
         assertThat(dto).isEqualToIgnoringGivenFields(ArticleDto.builder()
                 .author("author")
                 .id(12345678L)
