@@ -51,7 +51,7 @@ public class ArticleRepository {
 
         final ImageBlock imageBlock = new ImageBlock();
         imageBlock.setImage(createImage(1L));
-        textBlock.setSortIndex(1);
+        imageBlock.setSortIndex(1);
         result.add(imageBlock);
 
         final TextBlock secondTextBlock = new TextBlock();
@@ -60,7 +60,7 @@ public class ArticleRepository {
         result.add(secondTextBlock);
 
         final GalleryBlock galleryBlock = new GalleryBlock();
-        secondTextBlock.setSortIndex(3);
+        galleryBlock.setSortIndex(3);
 
         final List<Image> galleryImages = new ArrayList<>();
         galleryImages.add(createImage(2L));
@@ -91,6 +91,6 @@ public class ArticleRepository {
         result.setLastModifiedBy("Max Mustermann");
         result.setImageSize(ImageSize.LARGE);
         result.setUrl("https://someurl.com/image/" + imageId);
-        return null;
+        return result;
     }
 }
